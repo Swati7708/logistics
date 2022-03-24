@@ -1,77 +1,79 @@
 <html>
-    <head>
-        <title>Gil Logistics</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-        <style>
-            .black{
-                background-color: black;
-                opacity: 1;
-                margin-bottom: 0;
-                margin-right: 50%;
-                position: absolute;
-            }
-            .menu-bar{
-	            text-align:center;
-	            background-color: rgb(121, 167, 197);
-            }
-            .menu-bar ul{
-            	display:inline-flex;
-            	list-style-type:none;
-            }
-            body{
-                
-                background-size: cover;
-                display: inline;
-                               
-                
-            }
-            .heading{
-                position:fixed;
-                font-size: 50px;
-                text-align: center;
-                margin-top: -70px;
-                margin-left: 88%;
-                font-family:"Audiowide";               
-                position: absolute;
-            text-align: center;
-            color:rgb(234,235,254);
-            text-shadow: 6px 6px 3px rgb(2,41,84);
-                
-            }
-            h2{
-                margin-top: 0px;
-                text-shadow: 5px 5px rgb(87, 84, 84);
-            }
-            .head{
-                margin-top: 5px;
-                margin-right:20px;
-                text-align: right;
-                text-shadow: 5px 5px 5px rgb(128, 79, 79);
-                opacity: 1;
-                
-            }
-            a:link{
-                text-decoration: none;
-                color: aliceblue;
-                text-align: center;
-            }
-            
-            .list{
-                margin-top: 0px;
-                position: absolute;
-                font-weight:bolder;
-                color: rgb(10, 10, 10);
-                /*background-image: linear-gradient(to bottom, cyan, rgb(236, 113, 113), rgb(57, 143, 241));*/
-                padding-right:20px;
-                padding-top: 20px;
-                padding-bottom: 0px;
-                font-size: large;
-                overflow:hidden;
-                
-            }
-           /* .semi {
+  <head>
+    <title>Gil Logistics</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <style>
+      .black {
+        background-color: black;
+        opacity: 1;
+        margin-bottom: 0;
+        margin-right: 50%;
+        position: absolute;
+      }
+      .menu-bar {
+        text-align: center;
+        background-color: rgb(121, 167, 197);
+      }
+      .menu-bar ul {
+        display: inline-flex;
+        list-style-type: none;
+      }
+      body {
+        /* background-size: cover; */
+        display: inline;
+        max-width: 100vw;
+        max-height: 100vh;
+      }
+      .heading {
+        float: right;
+        font-size: 50px;
+        text-align: center;
+        font-family: "Audiowide";
+        text-align: center;
+        color: rgb(234, 235, 254);
+        text-shadow: 6px 6px 3px rgb(2, 41, 84);
+      }
+      h2 {
+        margin-top: 0px;
+        text-shadow: 5px 5px rgb(87, 84, 84);
+      }
+      .head {
+        margin-top: 5px;
+        margin-right: 20px;
+        text-align: right;
+        text-shadow: 5px 5px 5px rgb(128, 79, 79);
+        opacity: 1;
+      }
+      a:link {
+        text-decoration: none;
+        color: aliceblue;
+        text-align: center;
+      }
+
+      .list {
+        margin-top: 0px;
+        position: absolute;
+        font-weight: bolder;
+        color: rgb(10, 10, 10);
+        /*background-image: linear-gradient(to bottom, cyan, rgb(236, 113, 113), rgb(57, 143, 241));*/
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        font-size: large;
+        overflow: hidden;
+      }
+      /* .semi {
             position: absolute;
             top: 50%;
             left: 70px;;
@@ -85,115 +87,99 @@
             opacity: 0.7;
             }
             */
-            .semitop {
-            position: absolute;
-            margin-top:40px;
-            margin-left: 92%;
-            transform: translate(-50%, -50%);
-            box-shadow: 10px 10px 10px black;
-            height: 250px;
-            width: 250px;
-            border-radius: 0 0 0 80% ;
-            background-image: linear-gradient(to right, #da406e, rgb(76, 71, 71));
-            align-content: flex-start;
-            opacity: 0.8;
-            }
-        .footer{
-            position: sticky;
-            text-align: center;
-            margin-right: 7%;
-            
-            color: rgb(22, 19, 18);
-            font-size: 200%;
-            margin-top: 300px;
-            
-        }
-        .space{
-            margin: 10px;
-            display: inline;
-            text-align: right;
-            color:rgb(0,0,0,0.8);
-            
-        }
+      .semitop {
+        float: right;
+        box-shadow: 10px 10px 10px black;
+        height: 220px;
+        width: 220px;
+        border-radius: 0 0 0 100%;
+        background-image: linear-gradient(to right, #da406e, rgb(76, 71, 71));
+        opacity: 0.8;
         
-        .box{
-            
-            background-color: rgb(77, 110, 133);
-            border-radius: 20%;
-        }
-        span{
-            font-family:"Montserrat";
-            text-decoration: none;
-            border-color: rgba(29, 26, 26, 0.692);
-            padding: 10px;
-            display:block;
-            margin-left: 20px;
-            font-weight: bolder;
-            border-style: solid;
-            
-            
-            
-            
-        }
-        .active, span:hover{
-            font-family:"Montserrat";
-            text-decoration: none;
-            color: aliceblue;
-            background-color: rgb(77, 110, 133);
-            
-            padding:10px;
-            margin-left: 20px;
-            opacity: 1;
-        }
+      }
+      .footer {
+            left: 0;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+        text-align: center;
+        color: rgb(22, 19, 18);
+        font-size: 200%;
+      }
+      .space {
+        margin: 10px;
+        display: inline;
+        text-align: right;
+        color: rgb(0, 0, 0, 0.8);
+      }
 
-        .bg-image{
-            background-image: url("logimage.jpg");
-            background-size: cover;
-            opacity:0.8;
-        }
-        .space:hover{
-            color: rgb(241, 11, 22, 1);
-            font-weight: bolder;
-            
-        }
-        
-        small{
-            font-size: 80px;
+      .box {
+        background-color: rgb(77, 110, 133);
+        border-radius: 20%;
+      }
+      span {
+        font-family: "Montserrat";
+        text-decoration: none;
+        border-color: rgba(29, 26, 26, 0.692);
+        padding: 10px;
+        display: block;
+        margin-left: 20px;
+        font-weight: bolder;
+        border-style: solid;
+      }
+      .active,
+      span:hover {
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: aliceblue;
+        background-color: rgb(77, 110, 133);
 
-        }
-        
-        </style>
-    </head>
-    <body class="bg-image">
-        
-        <div class="semitop">
-            
-        </div>
+        padding: 10px;
+        margin-left: 20px;
+        opacity: 1;
+      }
+
+      .bg-image {
+        background-image: url("logimage.jpg");
+        background-size: cover;
+        opacity: 0.8;
+      }
+      .space:hover {
+        color: rgb(241, 11, 22, 1);
+        font-weight: bolder;
+      }
+
+      small {
+        font-size: 80px;
+      }
+    </style>
+  </head>
+  <body class="bg-image">
+    <div class="semitop">
         <div class="heading">
-            
-            <h6>Gil <br> Logistics.</h6>
-            
+            <h6 style="margin-top: 40;">
+                Gil <br />
+                Logistics.
+            </h6>
         </div>
-        
-        <div class="semi"></div>
+    </div>
+   
 
-        
-        
-        <p class="list">
-            <span>&nbsp&nbsp Markets &nbsp&nbsp</span><br>
-            <span>&nbsp&nbspSolutions&nbsp&nbsp</span><br>
-            <span>&nbsp&nbsp Services &nbsp&nbsp</span><br>
-            <span>&nbsp&nbsp&nbsp Clients &nbsp&nbsp&nbsp</span><br>
-            <span>Contact Us</span>
-        </p>
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <footer class="footer">
-            <div class="space"><i class="fa fa-facebook-official"></i></div>
-            <div class="space"><i class="fa fa-instagram"></i></div>
-            <div class="space"><i class="fa fa-twitter "></i></div>
-            <div class="space"><i class="fa fa-linkedin "></i></div>
-        </footer>
-        
-    </body>
+    <div class="semi"></div>
+
+    <p class="list">
+      <span>&nbsp&nbsp Markets &nbsp&nbsp</span><br />
+      <span>&nbsp&nbspSolutions&nbsp&nbsp</span><br />
+      <span>&nbsp&nbsp Services &nbsp&nbsp</span><br />
+      <span>&nbsp&nbsp&nbsp Clients &nbsp&nbsp&nbsp</span><br />
+      <span>Contact Us</span>
+    </p>
+
+    <footer class="footer">
+      <div class="space"><i class="fa fa-facebook-official"></i></div>
+      <div class="space"><i class="fa fa-instagram"></i></div>
+      <div class="space"><i class="fa fa-twitter"></i></div>
+      <div class="space"><i class="fa fa-linkedin"></i></div>
+    </footer>
+  </body>
 </html>
