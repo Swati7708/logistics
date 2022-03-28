@@ -104,14 +104,14 @@
            bottom: 0;
            position: fixed;
            text-align: left;
-           color: rgb(22, 19, 18);
+           color: rgb(48, 180, 212);
            font-size: 200%;
       }
       .space {
         margin: 10px;
         display: block;
         text-align: left;
-        color: rgb(0, 0, 0, 0.8);
+        color: rgb(48, 180, 212);
       }
 
       .box {
@@ -141,11 +141,13 @@
         opacity: 1;
       }
 
-      .bg-image {
-        background-image: url("logimage.jpg");
-        background-size: cover;
-        opacity: 0.8;
-      }
+      #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
       .space:hover {
         color: rgb(241, 11, 22, 1);
         font-weight: bolder;
@@ -156,7 +158,10 @@
       }
     </style>
   </head>
-  <body class="bg-image">
+  <video autoplay muted loop id="myVideo">
+    <source src="tobSmith.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
     <div class="semitop">
         <div class="heading">
             <h6 style="margin-top: 40;width: 180px;">
