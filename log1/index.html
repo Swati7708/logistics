@@ -13,6 +13,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Audiowide"
     />
+    <script src="https://chat.valentabpo.onereach.ai/lib/richWebChat.umd.min.js"></script>
+    <link rel="stylesheet" href="https://chat.valentabpo.onereach.ai/lib/richWebChat.css"/>
+
     <style>
       .black {
         background-color: black;
@@ -118,7 +121,7 @@
         background-color: rgb(77, 110, 133);
         border-radius: 20%;
       }
-      span {
+      .spandiv {
         font-family: "Montserrat";
         text-decoration: none;
         border-color: rgba(29, 26, 26, 0.692);
@@ -130,7 +133,7 @@
         float: right;
       }
       .active,
-      span:hover {
+      .spandiv:hover {
         font-family: "Montserrat";
         text-decoration: none;
         color: aliceblue;
@@ -175,11 +178,11 @@
     <div class="semi"></div>
 
     <p class="list">
-      <span>&nbsp&nbsp Markets &nbsp&nbsp</span><br />
-      <span>&nbsp&nbspSolutions&nbsp&nbsp</span><br />
-      <span>&nbsp&nbsp Services &nbsp&nbsp</span><br />
-      <span>&nbsp&nbsp&nbsp Clients &nbsp&nbsp&nbsp</span><br />
-      <span>Contact Us</span>
+      <span class="spandiv">&nbsp&nbsp Markets &nbsp&nbsp</span><br />
+      <span class="spandiv">&nbsp&nbspSolutions&nbsp&nbsp</span><br />
+      <span class="spandiv">&nbsp&nbsp Services &nbsp&nbsp</span><br />
+      <span class="spandiv">&nbsp&nbsp&nbsp Clients &nbsp&nbsp&nbsp</span><br />
+      <span class="spandiv">Contact Us</span>
     </p>
 
     <footer class="footer">
@@ -188,5 +191,37 @@
       <div class="space"><i class="fa fa-twitter"></i></div>
       <div class="space"><i class="fa fa-linkedin"></i></div>
     </footer>
+
+    <div id="rwc"></div>
+
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var RWC = richWebChat.default
+      var app = new RWC({
+        container: '#rwc', // DOM element selector where chat will be inserted
+        chatUrl: 'https://chat.valentabpo.onereach.ai/y2L3j9GsTDK1yvKBgWbpFw/0dd8jgb', // url of your chat. required
+        autoExpandDelay: 10000,
+        position: 'bottom-right',
+        inviteMessage: "",
+        inviteButton: "",
+        inviteImage: undefined,
+        showCloseIcon: false,
+        inviteTimeout: 5000,
+        allowChangeChatWindowSize: true,
+        allowDrag: true,
+        widgetColor: '#FFFF00',
+        allowStartNewConversation: true,
+        thumbLogo: 'https://www.designfreelogoonline.com/wp-content/uploads/2019/10/000726-Petroleum-04.png',
+        animation: 'pulse', // 'pulse', 'ring', 'zoom',
+        appearance: {
+          blurredBackground: false
+        },
+        pageData: {
+          fname: 'foo'
+        }
+      })
+    });
+  </script>
 </html>
